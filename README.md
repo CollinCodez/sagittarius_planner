@@ -14,8 +14,7 @@ In a new terminal, enter the following commands to launch moveit with the sagitt
 cd ~/sagittarius_ws
 
 source devel/setup.bash
-```
-```
+
 roslaunch sagittarius_moveit demo.launch
 ```
 
@@ -25,8 +24,9 @@ In another terminal, run the following commands to run planner.py python script:
 cd ~/sagittarius_ws
 
 source devel/setup.bash
-```
-```
+
+cd src/sagittarius_arm_ros/sagittarius_moveit/
+
 ROS_NAMESPACE=sgr532 rosrun sagittarius_moveit planner.py
 ```
 
