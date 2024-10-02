@@ -10,9 +10,15 @@ Verify that the planner.py file has been copied in sagittarius_moveit directory
 
 In a new terminal, enter the following commands to launch moveit with the sagittarius arm: 
 
-```cd ~/sagittarius_ws```
-```source devel/setup.bash```
-```roslaunch sagittarius_moveit demo.launch```
+```
+cd ~/sagittarius_ws
+```
+```
+source devel/setup.bash
+```
+```
+roslaunch sagittarius_moveit demo.launch
+```
 
 
 In another terminal, run the following commands to run planner.py python script:
