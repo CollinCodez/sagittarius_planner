@@ -1,6 +1,6 @@
 Instructions:
 
-Please make sure you have created your "sagittarius_ws" directory
+Please make sure you have installed your "sagittarius_ws" workspace from https://github.com/NXROBO/sagittarius_ws
 
 Copy the "planner.py" file to the following path: ~/sagittarius_ws/src/sagittarius_arm_ros/sagittarius_moveit
 
