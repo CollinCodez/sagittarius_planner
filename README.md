@@ -1,4 +1,4 @@
-#Instructions:
+# Instructions:
 
 Please make sure you have installed your "sagittarius_ws" workspace from https://github.com/NXROBO/sagittarius_ws
 
