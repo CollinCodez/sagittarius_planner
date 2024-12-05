@@ -13,7 +13,7 @@ This repository contains a Python-based motion planning script for the **Sagitta
 ## **Prerequisites**
 
 Ensure you have the following installed and configured:
-1. **ROS Kinetic or Melodic** on Ubuntu 16.04 or 18.04.
+1. **ROS Melodic** on Ubuntu 20.04.
 2. **MoveIt Framework**.
 3. **Python 3** with necessary ROS Python libraries.
 4. A properly set up **Sagittarius workspace (`sagittarius_ws`)**. Instructions for setting up the workspace can be found at [NXROBO's Sagittarius Workspace Repository](https://github.com/NXROBO/sagittarius_ws).
