@@ -1,6 +1,6 @@
 # **Sagittarius K1 Robotic Arm Motion Planner**
 
-This repository contains a Python-based motion planning script for the **Sagittarius 6-DOF robotic arm**. The project leverages **ROS** and **MoveIt** for precise and collision-free motion planning, enabling the robotic arm to execute complex tasks efficiently.
+This repository contains a Python-based motion planning script for the **Sagittarius 6-DOF robotic arm**. The project uses **ROS** and **MoveIt** for precise and collision-free motion planning, enabling the robotic arm to plan and execute complex tasks.
 
 ## **Features**
 - **Joint and Pose Goals**: Enables precise control of the arm's joints and end-effector positions.
