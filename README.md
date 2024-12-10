@@ -17,6 +17,7 @@ Ensure you have the following installed and configured:
 2. **MoveIt Framework**.
 3. **Python 3** with necessary ROS Python libraries.
 4. A properly set up **Sagittarius workspace (`sagittarius_ws`)**. Instructions for setting up the workspace can be found at [NXROBO's Sagittarius Workspace Repository](https://github.com/NXROBO/sagittarius_ws).
+5. The **Flask** Python library
 
 ---
 
@@ -24,11 +25,25 @@ Ensure you have the following installed and configured:
 
 Please make sure you have installed your "sagittarius_ws" workspace from https://github.com/NXROBO/sagittarius_ws
 
-Copy the **planner.py** file to the following path: ```~/sagittarius_ws/src/sagittarius_arm_ros/sagittarius_moveit```
+Copy the **planner.py** file and **WebServer** folder to the following path: ```~/sagittarius_ws/src/sagittarius_arm_ros/sagittarius_moveit```
 
 Verify that the planner.py file has been copied in sagittarius_moveit directory
 
+In **planner.py**, edit the file path in the `sys.path.insert(` line near the top of the file to appropriatly match the path to the WebServer folder on your computer.
 
+In **WebServer.py**, edit the `host` in the `startFlask()` function to match the IP address or hostname you want the web server to run on.
+
+To update the ROS launch files, open a new terminal and run the following commands:
+
+```
+cd ~/sagittarius_ws
+
+catkin_make
+```
+
+
+
+## **Running the Program**
 
 In a new terminal, enter the following commands to launch moveit with the sagittarius arm: 
 
@@ -54,3 +69,16 @@ ROS_NAMESPACE=sgr532 rosrun sagittarius_moveit planner.py
 
 
 The planning should start now. Follow the on screen instructions in the second terminal and press enter whenever prompted.
+
+---
+## **Using the Web Page**
+Navigate to the appropriate IP address & Port in a web browser.
+
+The **Mode** buttons work as follows:
+- **Stop** should stop the arm from running whatever it is currently doing ***NOTE:*** *This may only stop at the end of the current cycle*
+- **Auto** will make the arm begin the automatic cycle for handing out candy
+- **Manual** will enter a mode to allow you to manually adjust the joint positions using the sliders ***NOTE:*** *The sliders do not move to match where the arm currently is. They only change with inputs.*
+- **Exit** will cleanly exit the program
+
+
+The **Position** Buttons are not fully implemented at the moment, and will likely not do anything. This is also inteded to work during the **Manual** mode.
